@@ -8,6 +8,9 @@ import Footer from './components/footer';
 import Nav from './components/nav';
 import HomeSlider from './pages/HomeSlider';
 import Home from './pages/Home';
+// import BrowseGames from './pages/BrowseGames';
+// import Categories from './pages/Categories';
+
 
 function App() {
   const [count, setCount] = useState(0);
@@ -17,8 +20,11 @@ function App() {
       <Router>
         <Nav />
         <Routes>
-          <Route path ="/" element={<HomeSlider/>}/>
-          <Route path ="/" element={<Home/>}/>
+         <Route path ="/" element={<HomeSlider/>}/>
+         <Route path ="/home" element={<Home/>}/>
+         {/* <Route path ="/" element={<BrowseGames/>}/> */}
+         {/* <Route path="/" element={<Categories/>} /> */}
+         
         </Routes>
         <Footer />
       </Router>

@@ -1,5 +1,6 @@
 import React from 'react';
 import { FaShoppingCart, FaHeart, FaStar } from 'react-icons/fa';
+import BrowseGames from './BrowseGames';
 
 const games = [
   {
@@ -38,7 +39,7 @@ const games = [
   },
 ];
 
-export default function Home() {
+export default function BrowseGames() {
   return (
     <div style={styles.container}>
       <h2 style={styles.title}><span style={styles.fire}>🔥</span> Featured Games</h2>
